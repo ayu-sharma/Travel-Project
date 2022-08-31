@@ -2,44 +2,54 @@
     padding: 0%;
     margin: 0%;
     font-family: sans-serif;
-    
+
 }
+
 a {
     text-decoration: none;
 }
+
 body {
     padding: 2rem 5rem 0rem 5rem;
+
+
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
-    
+
     align-items: center;
 }
+
 .navbar li {
     display: flex;
     justify-content: space-between;
 }
 
 .navbar ul {
- 
+
     padding: 0rem 2rem 0rem 0rem;
 }
+
 .navbar a {
-    
+
     color: grey;
 }
+
 .navbar a:hover {
     color: black;
 }
+
 .bod {
-    display: flex;
+    display: grid;
+    padding: 3rem 0rem 0rem 0rem;
+    grid-auto-flow: column;
 }
-.text {
-    padding: 7rem 0rem 0rem 0rem;
-}
-.text h4 {
+
+
+
+.griditem h4 {
     color: red;
     font-family: 'Poppins';
     font-style: normal;
@@ -48,8 +58,11 @@ body {
     line-height: 30px;
     text-transform: uppercase;
     letter-spacing: -0.04em;
+    padding: 6rem 0rem 0rem 0rem;
 
 }
+
+
 #big {
     color: #181E4B;
     font-family: 'Volkhov';
@@ -60,15 +73,21 @@ body {
     letter-spacing: -0.04em;
 
 }
-.text h5 {
+
+.griditem h5 {
     font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 30px;
-color: #5E6282;
-padding: 0rem 0rem 2rem 0rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #5E6282;
+    padding: 0rem 0rem 2rem 0rem;
 }
+
+.griditem img {
+    display: flex;
+}
+
 #box {
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 30px;
@@ -79,194 +98,232 @@ padding: 0rem 0rem 2rem 0rem;
     background-color: gold;
     text-align: center;
     font-weight: 500;
-font-size: 18px;
-line-height: 23px;
-color: aliceblue;
-text-decoration: none;
+    font-size: 18px;
+    line-height: 23px;
+    color: aliceblue;
+    text-decoration: none;
 }
+
 #box:hover {
     background-color: goldenrod;
 }
+
 .categories {
     text-align: center;
 }
+
 .cat h4 {
     font-weight: 600;
-font-size: 18px;
-line-height: 27px;
-color: #5E6282;
-padding-top: 2rem;
+    font-size: 18px;
+    line-height: 27px;
+    color: #5E6282;
+    padding-top: 2rem;
 }
+
 .cat h2 {
     font-weight: 700;
-font-size: 50px;
-line-height: 64px;
-color: #14183E;
+    font-size: 50px;
+    line-height: 64px;
+    color: #14183E;
 }
+
 .services {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0rem 2rem 0rem;
 }
+
 .services h3 {
     padding-top: 2rem;
     font-weight: 600;
-font-size: 20px;
-line-height: 27px;
-text-align: center;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
 
-/* text heading color */
+    /* text heading color */
 
-color: #1E1D4C;
+    color: #1E1D4C;
 
 }
+
 .services div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .services h4 {
     font-weight: 500;
-font-size: 16px;
-line-height: 26px;
-text-align: center;
-color: #5E6282;
-padding: 1rem 0rem 0rem 0rem ;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #5E6282;
+    padding: 1rem 0rem 0rem 0rem;
 }
+
 .top {
     text-align: center;
     padding: 3rem 0rem 0rem 0rem;
 }
+
 .top h4 {
     font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 27px;
-color: #5E6282;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #5E6282;
 }
+
 .top h3 {
     font-style: normal;
-font-weight: 700;
-font-size: 50px;
-line-height: 64px;
-text-transform: capitalize;
-color: #14183E;
-padding: 1rem 0rem 0rem 0rem;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+    text-transform: capitalize;
+    color: #14183E;
+    padding: 1rem 0rem 0rem 0rem;
 }
+
 .places {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .van {
     padding: 3rem 0rem 0rem 0rem;
-   
+
 }
+
 .van img {
     border-radius: 20px;
 }
-.van h4{
+
+.van h4 {
     padding: 1rem 0rem 0rem 0rem;
     font-weight: 500;
-font-size: 18px;
-line-height: 124.5%;
-color: #5E6282;
+    font-size: 18px;
+    line-height: 124.5%;
+    color: #5E6282;
 }
+
 .boat {
     padding: 3rem 0rem 0rem 0rem;
 }
+
 .boat img {
     border-radius: 20px;
-    
-    
+
+
 }
+
 .boat h4 {
     padding: 1rem 0rem 0rem 0rem;
     font-weight: 500;
-font-size: 18px;
-line-height: 124.5%;
-color: #5E6282;
+    font-size: 18px;
+    line-height: 124.5%;
+    color: #5E6282;
 }
+
 .sanchi {
     padding: 3rem 0rem 0rem 0rem;
 }
+
 .sanchi img {
     border-radius: 20px;
 
-} 
+}
+
 .sanchi h4 {
     padding: 1rem 0rem 0rem 0rem;
     font-weight: 500;
-font-size: 18px;
-line-height: 124.5%;
-color: #5E6282;
+    font-size: 18px;
+    line-height: 124.5%;
+    color: #5E6282;
 }
+
 .subscribe {
     padding: 5rem 0rem 0rem 0rem;
-  
+
 }
+
+.bod img {
+    width: 100%;
+}
+
 .subtext {
     text-align: center;
     font-style: normal;
-font-weight: 600;
-font-size: 33px;
-line-height: 54px;
-color: #5E6282;
-padding: 2rem 0rem 0rem 0rem;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 54px;
+    color: #5E6282;
+    padding: 2rem 0rem 0rem 0rem;
 }
+
 #form {
-   text-align: center;
-   padding: 2rem 0rem 2rem 0rem;
+    text-align: center;
+    padding: 2rem 0rem 2rem 0rem;
 }
+
 #btn {
     height: 30px;
     width: 80px;
     border-radius: 10px;
+    cursor: pointer;
 }
+
 #query {
     height: 30px;
     border-radius: 10px;
     padding: 0rem 0rem 0rem 0.4rem;
-    
+
 }
 
 .sub {
     background-color: rgba(197, 143, 152, 0.473);
     border-radius: 10rem 0rem 4rem 0rem;
 }
+
 .footer {
     display: flex;
     justify-content: space-between;
     padding: 3rem 0rem 0rem 0rem
 }
+
 .footer h3 {
     font-style: normal;
-font-weight: 700;
-font-size: 21px;
-line-height: 124.5%;
-color: #080809;
-padding: 0rem 0rem 2rem 0rem;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 124.5%;
+    color: #080809;
+    padding: 0rem 0rem 2rem 0rem;
 }
-.footer  li {
+
+.footer li {
     list-style: none;
 }
+
 .footer ul {
     padding: 0rem 0rem 1rem 0rem;
 }
+
 .endline {
     text-align: center;
     padding: 0rem 0rem 1rem 0rem;
 }
+
 #endjadoo h4 {
     font-style: normal;
-font-weight: 500;
-font-size: 13px;
-line-height: 124.5%;
-color: #5E6282;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 124.5%;
+    color: #5E6282;
 
 }
+
 #endjadoo h2 {
     padding: 0rem 0rem 3rem 0rem;
 }

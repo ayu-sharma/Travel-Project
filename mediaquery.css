@@ -1,0 +1,27 @@
+@media screen and (max-width: 1290px) {
+    .bod {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    .subtext {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 32px;
+        color: #5E6282;
+        padding: 2rem 2rem 1rem 4rem;
+    }
+
+    .cat h4 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 12px;
+        color: #5E6282;
+        padding-top: 7rem;
+    }
+
+    .bod img {
+        width: 50%;
+    }
+}
