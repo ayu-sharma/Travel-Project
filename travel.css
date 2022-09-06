@@ -13,6 +13,7 @@ body {
     padding: 2rem 5rem 0rem 5rem;
 
 
+
 }
 
 .nav {
@@ -85,7 +86,12 @@ body {
 }
 
 .griditem img {
-    display: flex;
+    transition: transform 0.7s;
+
+}
+
+.griditem img:hover {
+    transform: rotateX(-20deg);
 }
 
 #box {
@@ -107,6 +113,8 @@ body {
 #box:hover {
     background-color: goldenrod;
 }
+
+
 
 .categories {
     text-align: center;
@@ -190,6 +198,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .van {
@@ -199,6 +208,12 @@ body {
 
 .van img {
     border-radius: 20px;
+    box-shadow: 0px 0px 0.4rem 0.5rem rgba(128, 128, 128, 0.418);
+    transition: transform .8s;
+}
+
+.van img:hover {
+    transform: rotateY(20deg);
 }
 
 .van h4 {
@@ -207,6 +222,7 @@ body {
     font-size: 18px;
     line-height: 124.5%;
     color: #5E6282;
+
 }
 
 .boat {
@@ -215,8 +231,13 @@ body {
 
 .boat img {
     border-radius: 20px;
+    box-shadow: 0px 0px 0.4rem 0.5rem rgba(128, 128, 128, 0.418);
+    transition: transform .8s;
 
+}
 
+.boat img:hover {
+    transform: rotateY(20deg);
 }
 
 .boat h4 {
@@ -229,10 +250,18 @@ body {
 
 .sanchi {
     padding: 3rem 0rem 0rem 0rem;
+
+}
+
+.sanchi img:hover {
+    transform: rotateY(20deg);
 }
 
 .sanchi img {
     border-radius: 20px;
+    box-shadow: 0px 0px 0.4rem 0.5rem rgba(128, 128, 128, 0.418);
+
+    transition: transform .8s;
 
 }
 
@@ -284,7 +313,7 @@ body {
 
 .sub {
     background-color: rgba(197, 143, 152, 0.473);
-    border-radius: 10rem 0rem 4rem 0rem;
+    border-radius: 10rem 1rem 10rem 1rem;
 }
 
 .footer {
@@ -326,4 +355,27 @@ body {
 
 #endjadoo h2 {
     padding: 0rem 0rem 3rem 0rem;
+}
+
+.endline h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 124.5%;
+}
+
+.signup {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    padding: 2rem 2.5rem;
+    background: blue;
+    box-shadow: 0.4rem 0.4rem 0.5rem 0.5rem black;
+    border-radius: 1rem;
+}
+
+.username,
+.email {
+    padding-bottom: 2rem;
 }
