@@ -4,12 +4,15 @@
     <title>Jadoo</title>
     <link rel="stylesheet" href="travel.css">
     <link rel="stylesheet" href="mediaquery.css">
+    <link rel="icon" href="favicon.ico">
+    <script defer type="text/javascript" src="travel.js"></script>
 </head>
 
 <body>
     <div class="whole">
         <div class="nav">
             <div class="logo">
+                <img src="9.png" alt="" width="40rem" height="40rem">
                 <h2>Jadoo</h2>
             </div>
             <div class="navbar">
@@ -19,7 +22,7 @@
                     <ul><a href="#">Flights</a></ul>
                     <ul><a href="#">Bookings</a></ul>
                     <ul><a href="#">Login</a></ul>
-                    <ul><a href="#">Sign up</a></ul>
+                    <ul><a href="" id="btn">Sign up</a></ul>
 
                     <ul><a href="#">En</a></ul>
                 </li>
@@ -34,7 +37,7 @@
                     and full life</h3>
                 <h5>1 City, many Itineraries and locations. The places everyone wants to be, before everyone wants to be
                     there. All Curated.</h5>
-                <a href="#" id="box">Find out More</a>
+                <a href="#places" id="box">Find out More</a>
             </div>
             <div class="griditem">
                 <img src="1.png" alt="">
@@ -70,7 +73,7 @@
             <h4>TOP SELLING</h4>
             <h3>Top Destinations</h3>
         </div>
-        <div class="places">
+        <div class="places" id="places">
             <div class="van">
                 <a href="#">
                     <img src="6.jpg" alt="van vihar" height="320x" width="300px">
@@ -146,26 +149,32 @@
     </div>
     </div>
 
-    <from class="signup">
-        <div class="text">
-            <h5>
-                Start Booking Your Place to Travel
-            </h5>
-        </div>
+    <div class="signup">
+        <div class="content">
+            <div class="text">
+                <h2>
+                    Sign Up <br>
+                    <span class="line">Its free and only takes a minute</span>
+                </h2>
+            </div>
 
-        <div class="username">
-            <label for="Username" id="name"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="Username" required>
-        </div>
-        <div class="email">
-            <label for="email" id="mail"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" required>
-        </div>
-        <div class="password">
-            <label for="password" id="pass"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="Password" required>
-        </div>
-        </form>
+            <div class="username">
 
+                <input type="text" placeholder="Username" name="Username" required>
+            </div>
+            <div class="email">
+
+                <input type="text" placeholder="Email" name="email" required>
+            </div>
+            <div class="password">
+
+                <input type="password" placeholder="Password" name="Password" required>
+            </div>
+
+            <button class="submit">
+                <a href="#">Submit</a>
+            </button>
+        </div>
+    </div>
 
 </body>

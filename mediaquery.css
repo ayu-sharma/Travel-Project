@@ -5,10 +5,10 @@
         width: 59rem;
     }
 
-
-    .griditem img {
+    .bod {
         display: flex;
         flex-direction: column-reverse;
-
+        width: 30rem;
     }
+
 }
