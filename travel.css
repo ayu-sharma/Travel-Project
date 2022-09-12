@@ -373,9 +373,10 @@ body {
 
 .signup {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 25%;
+    left: 36%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     display: none;
@@ -383,6 +384,7 @@ body {
     background: rgb(247, 245, 241);
     box-shadow: 0px 0px 5px 5px#181e4b7a;
     border-radius: 1rem;
+    transition: all .5s ease-in-out;
 }
 
 .username,
@@ -408,6 +410,7 @@ input::placeholder,
 .password input,
 input::placeholder {
     font-size: 17px;
+    border-radius: 10px;
 }
 
 
@@ -436,4 +439,87 @@ input::placeholder {
     color: #f4f4ff;
     font-size: 20px;
     font-weight: 600;
+}
+
+.cross {
+    float: right;
+    padding: 3px;
+    cursor: pointer;
+    background-color: #181e4bad;
+    color: #f4f4ff;
+    border-radius: 100%;
+    font-size: 13px;
+    border-color: #181e4bad;
+    animation: drop 0.7s ease-out;
+}
+
+.active {
+    display: flex;
+    animation: drop 0.7s ease-in-out;
+
+}
+
+@keyframes drop {
+    0% {
+        transform: scale(0) rotate(-360deg);
+    }
+
+
+
+}
+
+
+.login {
+    position: absolute;
+    top: 25%;
+    left: 36%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    padding: 2rem 2.5rem;
+    background: rgb(247, 245, 241);
+    box-shadow: 0px 0px 5px 5px#181e4b7a;
+    border-radius: 1rem;
+}
+
+.email-login {
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.email-login input,
+.password-login input {
+    height: 3rem;
+    width: 20rem;
+    padding-left: 7px;
+}
+
+.email-login input,
+input::placeholder,
+.password-login input,
+input::placeholder {
+    font-size: 17px;
+}
+
+.forgot a {
+    font-size: 12px;
+    float: right;
+    padding-bottom: 2rem;
+}
+
+.login.passive {
+    display: flex;
+}
+
+.close {
+    float: right;
+    padding: 3px;
+    cursor: pointer;
+    background-color: #181e4bad;
+    color: #f4f4ff;
+    border-radius: 100%;
+    font-size: 13px;
+    border-color: #181e4bad;
 }
