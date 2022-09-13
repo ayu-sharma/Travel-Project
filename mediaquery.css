@@ -7,7 +7,7 @@
 
     .bod {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         width: 30rem;
     }
 
