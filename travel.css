@@ -22,29 +22,61 @@ body {
 }
 
 /*Whole Navbar*/
-.nav {
+header {
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: -1rem;
+}
+
+/*Nav Items*/
+.nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/*Nav Items*/
-.navbar li {
-    display: flex;
-    justify-content: space-between;
+.nav-item {
+    margin-left: 5rem;
 }
 
-.navbar ul {
-
-    padding: 0rem 2rem 0rem 0rem;
+.nav-link {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #475569;
 }
 
-.navbar a {
-    color: grey;
+.nav-link:hover {
+    color: #482ff7;
 }
 
-.navbar a:hover {
-    color: black;
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
 }
 
 /* Image and text whinch is in grid*/
@@ -153,6 +185,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0rem 2rem 0rem;
+    flex-wrap: wrap;
 }
 
 .services h3 {
@@ -214,18 +247,48 @@ body {
 }
 
 .van {
-    padding: 3rem 0rem 0rem 0rem;
+    top: 21px;
+    position: relative;
+    display: inline-block;
 
 }
 
 .van img {
     border-radius: 20px;
     box-shadow: 0px 0px 0.4rem 0.5rem rgba(128, 128, 128, 0.418);
-    transition: transform .8s;
+
 }
 
-.van img:hover {
-    transform: rotateY(20deg);
+
+
+.van .img-down {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 22px;
+    background-color: white;
+    line-height: 34px;
+    border-radius: 19px;
+    padding-bottom: 26px;
+
+
+}
+
+.van .img-down h3 {
+    line-height: 3px;
+}
+
+.van:hover .img-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-down:hover {
+    animation: drop 0.5s ease-in-out;
 }
 
 .van h4 {
@@ -238,18 +301,48 @@ body {
 }
 
 .boat {
-    padding: 3rem 0rem 0rem 0rem;
+    top: 21px;
+    position: relative;
+    display: inline-block;
 }
 
 .boat img {
     border-radius: 20px;
     box-shadow: 0px 0px 0.4rem 0.5rem rgba(128, 128, 128, 0.418);
-    transition: transform .8s;
+
 
 }
 
-.boat img:hover {
-    transform: rotateY(20deg);
+
+.boat .img-down {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 22px;
+    background-color: white;
+    line-height: 34px;
+    border-radius: 19px;
+    padding-top: 22px;
+    padding-bottom: 60px;
+
+
+}
+
+.boat .img-down h3 {
+    line-height: 3px;
+}
+
+.boat:hover .img-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-down:hover {
+    animation: drop 0.5s ease-in-out;
 }
 
 .boat h4 {
@@ -261,20 +354,48 @@ body {
 }
 
 .sanchi {
-    padding: 3rem 0rem 0rem 0rem;
+    top: 21px;
+    position: relative;
 
 }
 
-.sanchi img:hover {
-    transform: rotateY(20deg);
-}
+
 
 .sanchi img {
     border-radius: 20px;
     box-shadow: 0px 0px 0.4rem 0.5rem rgba(128, 128, 128, 0.418);
 
-    transition: transform .8s;
+}
 
+.sanchi .img-down {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    padding: 22px;
+    background-color: white;
+    line-height: 34px;
+    border-radius: 19px;
+    padding-top: 22px;
+    padding-bottom: 26px;
+
+
+}
+
+.sanchi .img-down h3 {
+    line-height: 3px;
+}
+
+.sanchi:hover .img-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-down:hover {
+    animation: drop 0.5s ease-in-out;
 }
 
 .sanchi h4 {
@@ -416,7 +537,7 @@ input::placeholder {
 /* 'X' button which means cross for both signup popup window */
 .cross {
     float: right;
-    padding: 3px;
+    padding: 4px 6px 4px 6px;
     cursor: pointer;
     background-color: #181e4bad;
     color: #f4f4ff;
@@ -509,7 +630,7 @@ input::placeholder {
 /* 'X' button which means cross for both login popup window */
 .close {
     float: right;
-    padding: 3px;
+    padding: 4px 6px 4px 6px;
     cursor: pointer;
     background-color: #181e4bad;
     color: #f4f4ff;
@@ -534,13 +655,6 @@ input::placeholder {
     visibility: visible;
 }
 
-.preloader {
-    background-color: #080809;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-}
 
 
 

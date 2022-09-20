@@ -1,6 +1,6 @@
 console.log("javascript")
 
-var btn = document.getElementById('btn')
+var btn = document.getElementById('signup')
 function myfunction() {
 
     document.querySelector('.content').classList.add('show');

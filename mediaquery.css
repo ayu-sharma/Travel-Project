@@ -1,14 +1,57 @@
-@media (max-width: 800px) {
+@media only screen and (max-width: 768px) {
+    * {
+        padding: 0%;
+        margin: 0%;
+        font-family: sans-serif;
 
-    html,
+    }
+
     body {
-        width: 59rem;
+        padding: 0;
+
+
+    }
+
+    .bod img {
+
+        display: none;
+    }
+
+    .services {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .services h4 {
+        padding-bottom: 2rem;
+    }
+
+    .places {
+        display: grid;
+        justify-content: center;
+    }
+
+    h4,
+    h3,
+    h5 {
+        text-align: center;
     }
 
     .bod {
         display: flex;
         flex-direction: column;
-        width: 30rem;
+        align-items: center;
+        justify-content: center;
+
     }
 
+    .grid-place {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
 }

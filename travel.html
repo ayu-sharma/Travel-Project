@@ -4,6 +4,7 @@
     <title>Jadoo</title>
     <link rel="stylesheet" href="travel.css">
     <link rel="stylesheet" href="mediaquery.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="favicon.ico">
     <script defer type="text/javascript" src="travel.js"></script>
 </head>
@@ -11,38 +12,63 @@
 <body>
     <div class="whole">
         <!--Whole Navbar-->
-        <div class="nav">
-            <!--Logo of Jadoo-->
-            <div class="logo">
-                <img src="9.png" alt="" width="40rem" height="40rem">
-                <h2>Jadoo</h2>
-            </div>
-            <!--Nav Items-->
-            <div class="navbar">
-                <li class="menu">
-                    <ul><a href="#">Destination</a></ul>
-                    <ul><a href="#">Hotels</a></ul>
-                    <ul><a href="#">Flights</a></ul>
-                    <ul><a href="#">Bookings</a></ul>
-                    <ul><a href="#" id="log">Login</a></ul>
-                    <ul><a href="#" id="btn">Sign up</a></ul>
 
-                    <ul><a href="#">En</a></ul>
-                </li>
-            </div>
+        <!--Nav Items-->
+        <header class="header">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="9.png" alt="" width="40rem" height="40rem">
+                    <h2>Jadoo</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Destination</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Flights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="log">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="signup">SignUp</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">EN</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
 
-        </div>
         <!--Image and Text-->
         <div class="bod">
             <!--Text-->
-            <div class="griditem">
-                <h4>Best Destinations around Bhopal</h4>
-                <h3 id="big">Travel, enjoy
-                    and live a new
-                    and full life</h3>
-                <h5>1 City, many Itineraries and locations. The places everyone wants to be, before everyone wants to be
-                    there. All Curated.</h5>
-                <a href="#places" id="box">Find out More</a>
+            <div class="grid-place">
+                <div class="griditem">
+                    <h4>Best Destinations around Bhopal</h4>
+                    <h3 id="big">Travel, enjoy
+                        and <br>live a new<br>
+                        and full life</h3>
+                    <h5>1 City, many Itineraries and locations. The places <br> everyone wants to be, before
+                        everyone
+                        wants
+                        to be
+                        there.<br> All Curated.</h5>
+                </div>
+                <div>
+                    <a href="#places" id="box">Find out More</a>
+                </div>
             </div>
             <!--Image in grid with the Text-->
             <div class="griditem">
@@ -86,14 +112,32 @@
             <div class="van">
                 <a href="#">
                     <img src="6.jpg" alt="van vihar" height="320x" width="300px">
+                    <p class="img-down">Van Vihar National Park and Zoo is one of the most revered National Park and
+                        Zoo of Central India
+                        and is a shining beacon in the field of conservation. It is an amazing world of winged
+                        creatures,
+                        free ranging ungulates and captive carnivores in the midst of greenery.
+
+                    </p>
+
                     <div>
+
                         <h4>Van Vihar</h4>
                     </div>
                 </a>
             </div>
             <a href="#">
                 <div class="boat">
-                    <img src="7.png" alt="Boat Club" height="320x" width="300px">
+                    <div>
+                        <img src="7.png" alt="Boat Club" height="320x" width="300px">
+                        <p class="img-down">This is the place from where you can hire paddle boat, speed boat or even a
+                            canoe for the lake. In the evenings the tourist department runs a ferry where you can enjoy
+                            nice
+                            music along with snacks. Yatching facility is available too.
+
+                    </div>
+
+                    </p>
                     <div>
                         <h4>Boat Club</h4>
                     </div>
@@ -102,6 +146,11 @@
         <a href="">
             <div class="sanchi">
                 <img src="8.jpeg" alt="Sanchi Stupa" height="320x" width="300px">
+                <p class="img-down">The town of Sanchi is synonymous with Buddhist Stupas - hemispherical structures
+                    typically containing
+                    relics of the Buddha or his followers. The Stupas of Sanchi were constructed on the orders of
+                    Emperor
+                    Ashoka to preserve and spread the Buddhist philosophy.</p>
                 <div>
                     <h4>Sanchi Stupa</h4>
                 </div>
@@ -201,7 +250,7 @@
             <div class="text">
                 <h2>
                     Log In <br>
-                    <span class="line">Its free and only takes a minute</span>
+                    <span class="line">Log In to your account</span>
                 </h2>
 
             </div>
